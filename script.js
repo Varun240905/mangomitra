@@ -5,8 +5,9 @@ window.addEventListener("scroll", () => {
     const position = el.getBoundingClientRect().top;
     const screenHeight = window.innerHeight;
 
-    if (position < screenHeight - 100) {
+    if (position < screenHeight - 40) {
       el.classList.add("show");
     }
   });
 });
+
