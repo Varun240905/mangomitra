@@ -127,6 +127,32 @@ section {
   margin: auto;
 }
 
+.about-us {
+  background: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.about-us .highlight {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #ff9800;
+}
+
 .varieties .cards {
   display: flex;
   justify-content: center;
@@ -170,13 +196,7 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.4s ease-out;
-}
-
-.hero .fade-in {
-  transition: none;
-  opacity: 1;
-  transform: translateY(0);
+  transition: all 0.5s ease;
 }
 
 .fade-in.show {
@@ -205,4 +225,3 @@ footer {
     padding: 8px;
   }
 }
-
