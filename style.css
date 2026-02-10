@@ -170,7 +170,13 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.25s ease;
+  transition: all 0.4s ease-out;
+}
+
+.hero .fade-in {
+  transition: none;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-in.show {
@@ -199,3 +205,4 @@ footer {
     padding: 8px;
   }
 }
+
