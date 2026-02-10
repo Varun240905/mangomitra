@@ -170,7 +170,7 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 1s ease;
+  transition: all 0.25s ease;
 }
 
 .fade-in.show {
