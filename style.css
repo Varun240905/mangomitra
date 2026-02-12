@@ -35,6 +35,20 @@
   z-index: 10;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
 .logo {
   color: white;
   line-height: 1;
@@ -192,6 +206,33 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(0,0,0,0.85);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
 /* Animations */
 .fade-in {
   opacity: 0;
@@ -225,3 +266,4 @@ footer {
     padding: 8px;
   }
 }
+
